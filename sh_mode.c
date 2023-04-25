@@ -9,17 +9,18 @@
 
 void interactive_sh(void)
 {
-	/*char *lineptr;
-	size_t n;*/
-	ssize_t chars_read;
+	char *lineptr;
+	/*size_t n = 0;*/
+	/*ssize_t chars_read;*/
 
-	do
-	{
-		/*lineptr = NULL;
-		n = 0;*/
-
+	do {
 		write(STDOUT_FILENO, PROMPT, getStr_len(PROMPT));
-		/*_getline(&lineptr, &n, stdin);*/
-	}	
-
+		lineptr = _getline();
+		
+		write(STDOUT_FILENO, lineptr, getStr_len(lineptr));
+		/*free(chars_read);*/
+	} while (1);
+	free(lineptr);
+	
+	
 }

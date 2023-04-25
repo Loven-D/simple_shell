@@ -1,54 +1,35 @@
 #include "coco.h"
 
 /**
-* getStr_len - Return the length of a string
-* @str: a pointer to the string whose length
-*	is to be caculated.
-*
-* Return: length of string if successful, otherwise 0
-*/
-
-int getStr_len(char *str)
-{
-	int str_count;
-
-	str_count = 0;
-
-	if (str == NULL)
-	{
-		return (0);
-	}
-
-	while (*str != '\0')
-	{
-		str++;
-		str_count++;
-	}
-}
-
-
-/**
 * _getline - Reads an entire line from STDIN
-* Return: Number of characters read on success
+*	& pasrses commands and arguments
+* @lineptr: A pointer to the buffer address
+* @n: Number of size in bytes
+* @cmdCount: Track total command entered
+* @argv: Program name
 */
 
-ssize_t _getline(void)
+void _getline(char *lineptr, size_t n, int cmdCount, char **argv)
 {
-	char *lineptr = NULL;
-	ssize_t n, chars_read;
+	/*char **arr_of_args;*/
+	size_t numOfCharsRead;
+	/*int count, numOfToken;
+	numOfToken = 0;*/
+	write(STDOUT_FILENO, PROMPT, getStr_len(PROMPT));
+	numOfCharsRead = getline(&lineptr, &n, stdin);
 
-	n = 0;
-
-	chars_read = getline(&lineptr, &n, stdin);
-
-	if (chars_read == -1) /* we've reached end of the file/it fails*/
+	if (numOfCharsRead == check) /* check if we've reached EOF/Error*/
 	{
 		exit_sh(lineptr);
 	}
+	/*
 	else
 	{
-		write(STDOUT_FILENO, ERROR, getStr_len(ERROR);
-		exit_sh(lineptr);
-	}
-	return (lineptr);
+		arr_of_args = t_interface(lineptr, delim, numOfToken);
+		if (arr_of_args[0] == NULL)
+		{
+			
+		}
+	}*/
 }
+

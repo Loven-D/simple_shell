@@ -1,14 +1,13 @@
 # Project Title -0x16.C - Simple Shell
-
-## Coco The Simple Shell
+ This is a team project on Shell. As part of our curriculum at ALX, we were tasked to create a simple shell that mimics the Bash shell. We named our shell coco shell.
 
 ### Synopsis
 
-This is a simple implementation of a UNIX comman line interpreter.
+This is a simple implementation of a UNIX command line interpreter.
 
 ## Description
 
-Coco reads command line arguments from the standard input, interpret and execute them. Lines are read from a file or the terminal. After reading the lines, she interprets and execute it if it is a valid command.
+coco reads command line arguments from the standard input, interpret and execute them. Lines are read from a file or the terminal. After reading the lines, she interprets and execute it if it is a valid command.
 
 ## Usage
 
