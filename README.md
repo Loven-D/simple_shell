@@ -1,5 +1,5 @@
 ## Project Title -0x16.C - Simple Shell
-	This is a team project on Shell. As part of our curriculum at ALX, we were tasked to create a simple shell that mimics the Bash shell. We named our shell hsh.
+This is a team project on Shell. As part of our curriculum at ALX, we were tasked to create a simple shellthat mimics the Bash shell. We named our shell hsh.
 
 ## Synopsis
 
