@@ -11,7 +11,6 @@ This is a simple implementation of a UNIX command line interpreter.
 
 
 ## Usage
- 
 	All your files will be compiled on Ubuntu 20.04 LTS using:
 
 		gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
